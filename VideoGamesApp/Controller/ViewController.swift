@@ -2,24 +2,28 @@
 //  ViewController.swift
 //  VideoGamesApp
 //
-//  Created by Cem Eke on 23.02.2021.
+//  Created by Cem Eke on 1.03.2021.
 //
 
+import Foundation
 import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var captionImageView: UIImageView!
+    
+    
+    var gameManager = GameManager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    @IBAction func pageControl(_ sender: Any) {
+        gameManager.requestFunc()
     }
     
-    @IBOutlet weak var navigationBarClicked: UINavigationBar!
+    @IBAction func pageControl(_ sender: Any) {
+        
+    }
+    
     
 }
-

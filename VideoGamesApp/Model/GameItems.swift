@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct GameItems: Codable {
+    var results: [GameItem]
+}
